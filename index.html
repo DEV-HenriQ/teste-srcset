@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Teste de imagens</title>
+
+      <!-- CSS -->
+      <style>
+         * {margin: 0; padding: 0; box-sizing: border-box;}
+      </style>
+      <!-- SCRIPTS (NÃO ESQUECER DO ATRIBUTO 'DEFER') -->
+      
+   </head>
+   <body>
+      <h1>Testando imagens</h1>
+      <img
+         src="http://lorempixel.com.br/400/200"
+
+         srcset="http://lorempixel.com.br/600/300/ 600w,
+         http://lorempixel.com.br/800/400/ 800w"
+
+         sizes="(min-width: 700px) 100vw,
+         (min-width: 500px) 75vw,
+         50vw"
+
+         alt="teste"
+      >
+   </body>
+</html>
+
+<!-- 
+   src = fall back para navegadores que não suportam srcset
+   srcset =  indica ao navegador as imagens e os tamanhos (largura) dessas imagens
+   sizes = indica ao navegador qual o tamanho que a imagem vai ser renderizada na tela
+-->
